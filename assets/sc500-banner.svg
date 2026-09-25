@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="auto">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f"/>
+      <stop offset="50%" stop-color="#0f2b48"/>
+      <stop offset="100%" stop-color="#001830"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0078D4"/>
+      <stop offset="50%" stop-color="#00A4EF"/>
+      <stop offset="100%" stop-color="#25D366"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0078D4"/>
+      <stop offset="50%" stop-color="#002050"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="360" rx="12" fill="url(#bg)"/>
+
+  <!-- Border Accent -->
+  <rect x="2" y="2" width="1196" height="356" rx="10" fill="none" stroke="url(#accent)" stroke-width="2.5" opacity="0.65"/>
+
+  <!-- Top Accent Bar -->
+  <rect x="0" y="0" width="1200" height="6" fill="url(#accent)"/>
+
+  <!-- Shield Icon Graphic -->
+  <g transform="translate(60, 65)">
+    <path d="M 70 0 L 140 30 L 140 100 C 140 160 70 210 70 210 C 70 210 0 160 0 100 L 0 30 Z" fill="url(#shieldGrad)" stroke="#00A4EF" stroke-width="3" filter="url(#glow)"/>
+    <!-- AI Core Node inside Shield -->
+    <circle cx="70" cy="95" r="28" fill="#0078D4" opacity="0.85"/>
+    <circle cx="70" cy="95" r="14" fill="#00E5FF"/>
+    <path d="M 70 50 L 70 81 M 70 109 L 70 140 M 35 95 L 56 95 M 84 95 L 105 95" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="70" cy="50" r="4" fill="#FFFFFF"/>
+    <circle cx="70" cy="140" r="4" fill="#FFFFFF"/>
+    <circle cx="35" cy="95" r="4" fill="#FFFFFF"/>
+    <circle cx="105" cy="95" r="4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Header Category & Organization -->
+  <text x="240" y="85" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#00E5FF" letter-spacing="2">MICROSOFT LEARNING HUB • OFFICIAL STUDY &amp; BLUEPRINT REPOSITORY</text>
+
+  <!-- Exam Code Pill Badge -->
+  <rect x="240" y="105" width="150" height="36" rx="18" fill="#0078D4"/>
+  <text x="315" y="129" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">EXAM SC-500</text>
+
+  <!-- Credential Title -->
+  <text x="405" y="130" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Microsoft Certified: Cloud &amp; AI Security Engineer Associate</text>
+
+  <!-- Subtitle -->
+  <text x="240" y="175" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="800" fill="#E2E8F0">Implementing End-to-End Security Controls for Cloud and AI Workloads</text>
+
+  <!-- Description Line -->
+  <text x="240" y="212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#94A3B8">Comprehensive Blueprint • Architecture Analysis • 20 Real-World Scenario Questions • Verified CertsClub Prep</text>
+
+  <!-- Bottom Badges / Metrics -->
+  <g transform="translate(240, 245)">
+    <!-- Badge 1: Passing Score -->
+    <rect x="0" y="0" width="170" height="55" rx="8" fill="#112240" stroke="#233554" stroke-width="1.5"/>
+    <text x="15" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#64748B">PASSING SCORE</text>
+    <text x="15" y="45" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="800" fill="#22C55E">700 / 1000</text>
+
+    <!-- Badge 2: Exam Duration -->
+    <rect x="185" y="0" width="170" height="55" rx="8" fill="#112240" stroke="#233554" stroke-width="1.5"/>
+    <text x="200" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#64748B">EXAM DURATION</text>
+    <text x="200" y="45" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="800" fill="#38BDF8">100–120 MINS</text>
+
+    <!-- Badge 3: Release Status -->
+    <rect x="370" y="0" width="180" height="55" rx="8" fill="#112240" stroke="#233554" stroke-width="1.5"/>
+    <text x="385" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#64748B">CURRICULUM</text>
+    <text x="385" y="45" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="800" fill="#FACC15">2026 OFFICIAL</text>
+
+    <!-- Badge 4: Practice Partner -->
+    <rect x="565" y="0" width="220" height="55" rx="8" fill="#112240" stroke="#EA580C" stroke-width="1.5"/>
+    <text x="580" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#FB923C">OFFICIAL PRACTICE PARTNER</text>
+    <text x="580" y="45" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">CertsClub.com (20% OFF)</text>
+  </g>
+</svg>
